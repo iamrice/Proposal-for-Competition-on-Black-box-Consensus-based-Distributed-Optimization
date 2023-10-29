@@ -1,0 +1,18 @@
+{
+    "benchmarks":{        
+        "ring-20n-1":{
+            "group_num":20,
+            "dimension":100,
+			"conforming":false,
+            "upper_bound": 100,
+            "lower_bound": -100, 
+            "funcClass":2,
+            "base_function":"elliptic",
+            "if_rotate":true,
+			"heterogeneous":false,
+            "weight":100,
+            "opt":0,
+            "if_shift":true
+        }
+    }
+}
