@@ -30,7 +30,7 @@ cd ./user_implement
 
 mpic++ -std=c++11 user_implement.cpp ../framework/framework.cpp ../framework/main.cpp ../Benchmarks/Benchmarks.cpp -o test
 
-mpirun -np 20 ./test ring-20n-1
+mpirun -np 20 ./test F1
 
 ```
 
