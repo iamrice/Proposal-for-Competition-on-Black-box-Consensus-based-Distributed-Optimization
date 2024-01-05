@@ -39,7 +39,7 @@ int main(int argc, char* argv[]){
         double **total_solutions = new double*[nprocs];
         for(int i=0;i<nprocs;i++){
             total_solutions[i] = new double[dimension]{0};
-            mempcpy(total_solutions[i],gather_final_solution+i*dimension,dimension*sizeof(double));
+            memcpy(total_solutions[i],gather_final_solution+i*dimension,dimension*sizeof(double));
         }
         double *average_solution = get_mtx_mean(total_solutions,nprocs,dimension);
 

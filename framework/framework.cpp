@@ -8,7 +8,7 @@ Framework::Framework(int agent_id, string func_id){
     this->agent_id = agent_id;
     commu_cost = 0;
     this->pFunc = new Benchmarks(func_id);
-    this->neighbor_id = this->pFunc->getOverlapGroup(this->agent_id);
+    this->neighbor_id = this->pFunc->getNeighbors(this->agent_id);
     this->final_solution = new double[this->get_problem_dim()]{0};
 }
 
@@ -101,7 +101,7 @@ vector<int> Framework::get_neighbor_id(){
 }
 
 int Framework::get_agent_num(){
-    return this->pFunc->getGroupNum();
+    return this->pFunc->getNodeNum();
 }
 
 int Framework::get_problem_dim(){
@@ -117,7 +117,7 @@ double Framework::get_upper_bound(){
 }
 
 void Framework::submit_final_solution(double* x){
-    mempcpy(this->final_solution,x,this->get_problem_dim()* sizeof(double));
+    memcpy(this->final_solution,x,this->get_problem_dim()* sizeof(double));
     return;
 }
 
