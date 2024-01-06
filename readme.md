@@ -22,7 +22,9 @@ Each team can write and submit a paper via the conference system that describes 
 
 ## How participants develop algorithms for this competition
 
-The competition provides an algorithm development platform for CDO. This platform provides interfaces for evaluation functions, communication, and performance evaluation, allowing developers to focus only on algorithm design. First, we design 5 groups of 36 benchmark functions in total for black-box CDO, and provide evaluation interfaces for these functions. Second, we provide peer-to-peer communication interfaces based on the communication topology of benchmark functions. These interfaces confirm that each node can only communicate with immediate neighbors. Third, we provide the performance evaluation interface for algorithms, including solution quality, communication efficiency, and system consensus. The code is available in https://github.com/iamrice/Proposal-for-Competition-on-Black-box-Consensus-based-Distributed-Optimization.
+The competition provides an algorithm development platform for CDO. This platform provides interfaces for evaluation functions, communication, and performance evaluation, allowing developers to focus only on algorithm design. First, we design 5 groups of 36 benchmark functions in total for black-box CDO, and provide evaluation interfaces for these functions. Second, we provide peer-to-peer communication interfaces based on the communication topology of benchmark functions. These interfaces confirm that each node can only communicate with immediate neighbors. Third, we provide the performance evaluation interface for algorithms, including solution quality, communication efficiency, and system consensus. The code is available in:
+
+**https://github.com/iamrice/Competition-on-Black-box-Consensus-based-Distributed-Optimization**
 
 The participants only need to modify the "agent_function" in file "./user_implement/user_implement.cpp". 
 ```
