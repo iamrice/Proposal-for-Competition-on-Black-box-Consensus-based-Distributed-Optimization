@@ -36,6 +36,10 @@ mpirun -np 20 ./test F1
 
 ```
 
+## Reference
+
+[T. -Y. Chen, W. -N. Chen, F. -F. Wei, X. -M. Hu and J. Zhang, "Multi-Agent Swarm Optimization With Adaptive Internal and External Learning for Complex Consensus-Based Distributed Optimization," IEEE Transactions on Evolutionary Computation, 2024, early access.](https://ieeexplore.ieee.org/abstract/document/10477458)
+
 ## Competition organizers
 
 **Wei-Neng Chen** (Senior Member, IEEE)
