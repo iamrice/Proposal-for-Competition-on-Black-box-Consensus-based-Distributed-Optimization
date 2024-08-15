@@ -87,6 +87,10 @@ int Framework::Message_Irecv(void *buf, int count, MPI_Datatype datatype, int so
     return res;
 }
 
+bool Framework::reachMaxEva(){
+    return pFunc->reachMaxEva();
+}
+
 double Framework::local_evaluation(double* x){
     return this->pFunc->local_eva(x,this->agent_id);
 }

@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <mpi.h>
+#include <sys/time.h>
 #include "../framework/framework.h"
 #include "../util/utils.h"
 using namespace std;
@@ -8,6 +9,12 @@ using namespace std;
 void agent_function(Framework*);
 double evaluate_criterion();
 
+long getCurrentTime()
+{
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return tv.tv_sec * 1000 + tv.tv_usec / 1000;
+}
 int main(int argc, char* argv[]){
     int myrank, nprocs, name;
     char proc_name[MPI_MAX_PROCESSOR_NAME];
@@ -21,6 +28,7 @@ int main(int argc, char* argv[]){
 
     Framework* handler = new Framework(myrank,func_id);
 
+    srand(getCurrentTime()+myrank);
     agent_function(handler);
 
     MPI_Barrier(MPI_COMM_WORLD);
@@ -50,9 +58,10 @@ int main(int argc, char* argv[]){
 
         double average_commu_cost = get_array_mean(gather_commu_cost,nprocs);
 
-        printf("algorithm performance: [fitness:%f, disagreement:%f, communication cost:%f]\n",fitness, disagreement, average_commu_cost);
+        printf("algorithm performance: [fitness:%.4e, disagreement:%.4e, communication cost:%.4e]\n",fitness, disagreement, average_commu_cost);
     }
 
+    MPI_Barrier(MPI_COMM_WORLD);
     MPI_Finalize();
 
     return 0;

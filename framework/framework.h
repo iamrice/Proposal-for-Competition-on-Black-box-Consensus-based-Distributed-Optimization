@@ -34,6 +34,7 @@ public:
     int Message_Irecv(void *buf, int count, MPI_Datatype datatype, int source, int tag,MPI_Request  *request);
     void submit_final_solution(double*);
     int get_commu_cost();
+    bool reachMaxEva();
 };
 
 #endif 

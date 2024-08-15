@@ -36,9 +36,20 @@ mpirun -np 20 ./test F1
 
 ```
 
-## Reference
+We provide a implementation example for distributed algorithms in the folder "TEVC2024-MASOIE". [T. -Y. Chen, W. -N. Chen, F. -F. Wei, X. -M. Hu and J. Zhang, "Multi-Agent Swarm Optimization With Adaptive Internal and External Learning for Complex Consensus-Based Distributed Optimization," IEEE Transactions on Evolutionary Computation, 2024, early access.](https://ieeexplore.ieee.org/abstract/document/10477458)
 
-[T. -Y. Chen, W. -N. Chen, F. -F. Wei, X. -M. Hu and J. Zhang, "Multi-Agent Swarm Optimization With Adaptive Internal and External Learning for Complex Consensus-Based Distributed Optimization," IEEE Transactions on Evolutionary Computation, 2024, early access.](https://ieeexplore.ieee.org/abstract/document/10477458)
+```
+cd ./TEVC2024-MASOIE
+
+mpic++ -std=c++11 MASOIE.cpp ../framework/framework.cpp ../framework/main.cpp ../Benchmarks/Benchmarks.cpp -o masoie
+
+mpirun -np 20 ./masoie F1
+
+```
+
+<!-- ## Reference
+
+[T. -Y. Chen, W. -N. Chen, F. -F. Wei, X. -M. Hu and J. Zhang, "Multi-Agent Swarm Optimization With Adaptive Internal and External Learning for Complex Consensus-Based Distributed Optimization," IEEE Transactions on Evolutionary Computation, 2024, early access.](https://ieeexplore.ieee.org/abstract/document/10477458) -->
 
 ## Competition organizers
 
