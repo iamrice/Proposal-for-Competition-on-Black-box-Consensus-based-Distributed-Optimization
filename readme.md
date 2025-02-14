@@ -11,8 +11,8 @@ The definition of benchmark functions and introduction of competition platform a
 
 ## Information for paricipants
 
-1. Submission deadline: May 8, 2024
-2. Notification (final ranking): June 8, 2024
+1. Submission deadline: May 8, 2025
+2. Notification (final ranking): June 8, 2025
 3. Special session title: Special Session on Evolutionary Computation for Distributed Consensus Optimization
 4. How participants will submit an entry: Participants should submit their entries via emails to cstaiutan@mail.scut.edu.cn.
 
