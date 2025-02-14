@@ -7,7 +7,7 @@ The goal of the competition is to encourage participants to use zero-order optim
 
 The definition of benchmark functions and introduction of competition platform are described as follows:
 
-<iframe src="./proposal.pdf" width="1000" height="500" frameborder="0"></iframe>
+<iframe src="./proposal_2025.pdf" width="1000" height="500" frameborder="0"></iframe>
 
 ## Information for paricipants
 
