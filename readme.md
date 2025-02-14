@@ -11,8 +11,8 @@ The definition of benchmark functions and introduction of competition platform a
 
 ## Information for paricipants
 
-1. Submission deadline: June 10, 2024
-2. Notification (final ranking): June 28, 2024
+1. Submission deadline: May 8, 2024
+2. Notification (final ranking): June 8, 2024
 3. Special session title: Special Session on Evolutionary Computation for Distributed Consensus Optimization
 4. How participants will submit an entry: Participants should submit their entries via emails to cstaiutan@mail.scut.edu.cn.
 
@@ -43,13 +43,18 @@ cd ./TEVC2024-MASOIE
 
 mpic++ -std=c++11 MASOIE.cpp ../framework/framework.cpp ../framework/main.cpp ../Benchmarks/Benchmarks.cpp -o masoie
 
-mpirun -np 20 ./masoie F1
+mpirun -np 20 ./masoie F1 // The same for F1-F8
+mpirun -np 40 ./masoie F9 // The same for F9-F16, F25-F28
+mpirun -np 81 ./masoie F17 // The same for F17-F24
+
 
 ```
 
-<!-- ## Reference
+## Reference
 
-[T. -Y. Chen, W. -N. Chen, F. -F. Wei, X. -M. Hu and J. Zhang, "Multi-Agent Swarm Optimization With Adaptive Internal and External Learning for Complex Consensus-Based Distributed Optimization," IEEE Transactions on Evolutionary Computation, 2024, early access.](https://ieeexplore.ieee.org/abstract/document/10477458) -->
+[T. -Y. Chen, W. -N. Chen, F. -F. Wei, X. -M. Hu and J. Zhang, "Multi-Agent Swarm Optimization With Adaptive Internal and External Learning for Complex Consensus-Based Distributed Optimization," IEEE Transactions on Evolutionary Computation, 2024, early access.](https://ieeexplore.ieee.org/abstract/document/10477458) 
+
+[T. -Y. Chen, W. -N. Chen, J. -K. Hao, Y. Wang and J. Zhang, "Multi-Agent Evolution Strategy With Cooperative and Cumulative Step Adaptation for Black-Box Distributed Optimization," in IEEE Transactions on Evolutionary Computation, doi: 10.1109/TEVC.2025.3525713.](https://ieeexplore.ieee.org/document/10824905)
 
 ## Competition organizers
 
